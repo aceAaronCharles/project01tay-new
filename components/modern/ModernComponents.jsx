@@ -7,7 +7,7 @@ import {
   FaCheck, 
   FaPlay, 
   FaStar, 
-  FaQuote, 
+  FaQuoteLeft, 
   FaChevronDown,
   FaHeart,
   FaShare,
@@ -287,7 +287,7 @@ export const TestimonialCard = ({
       </div>
       
       <div className="text-[#FF5000] text-4xl mb-4">
-        <FaQuote />
+        <FaQuoteLeft />
       </div>
       
       <blockquote className="text-gray-700 text-lg mb-6 italic leading-relaxed">
@@ -424,14 +424,4 @@ export const ProgressBar = ({
   );
 };
 
-export default {
-  ModernButton,
-  ModernCard,
-  ModernHero,
-  FeatureCard,
-  StatsCounter,
-  TestimonialCard,
-  LoadingSpinner,
-  ModernAlert,
-  ProgressBar
-};
+// Components are already exported individually above with export const

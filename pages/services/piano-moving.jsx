@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Jumbotron from '../../components/jumbotron'
 import QuoteModal from '../../components/Quote/QuoteModal'
 import { BsCheckCircle, BsShield, BsTruck, BsClock } from 'react-icons/bs'
-import { FaGuitar, FaPiano } from 'react-icons/fa'
+import { FaGuitar, FaMusic } from 'react-icons/fa'
 
 const PianoMoving = () => {
   const features = [
@@ -117,7 +117,7 @@ const PianoMoving = () => {
               to ensure your precious instrument arrives safely at its new home.
             </p>
             <div className="flex items-center space-x-4 mb-6">
-              <FaPiano className="text-[#FF5000] text-2xl" />
+              <FaMusic className="text-[#FF5000] text-2xl" />
               <span className="text-gray-700">Over 500 pianos moved successfully</span>
             </div>
             <div className="flex items-center space-x-4 mb-8">

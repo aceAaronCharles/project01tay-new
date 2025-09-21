@@ -39,7 +39,8 @@ import {
 } from 'react-icons/fa'
 import { MdElectricalServices, MdPlumbing, MdCleaningServices, MdDesignServices, MdBuild, MdHandyman } from 'react-icons/md'
 import { RiShieldCheckFill, RiCustomerService2Fill, RiStorageFill } from 'react-icons/ri'
-import { GiElectric, GiWaterDrop, GiBroom, GiHammer } from 'react-icons/gi'
+import { GiElectric, GiWaterDrop, GiBroom } from 'react-icons/gi'
+import { FaTruck } from 'react-icons/fa'
 
 const SpecializedServices = () => {
   const packingServices = [
@@ -127,7 +128,7 @@ const SpecializedServices = () => {
       description: "Need short-term staffing after a business relocation? Our partners provide qualified personnel for logistics, admin, and operations during transitional periods."
     },
     {
-      icon: <FaCameraVideo className="text-[#FF5000] text-4xl" />,
+      icon: <FaVideo className="text-[#FF5000] text-4xl" />,
       title: "CCTV Installation Services",
       description: "Secure your new premises on day one. Through trusted security firms, we offer professional CCTV installations for homes and offices."
     }
@@ -428,7 +429,7 @@ const SpecializedServices = () => {
         </div>
         <div className="bg-gradient-to-r from-gray-100 to-gray-200 p-8 rounded-2xl">
           <div className="flex items-center mb-6">
-            <GiHammer className="text-[#FF5000] text-4xl mr-4" />
+            <BsTools className="text-[#FF5000] text-4xl mr-4" />
             <h3 className="font-bold text-2xl text-gray-800">Commercial Demolition Services</h3>
           </div>
           <div className="row">
