@@ -131,7 +131,7 @@ const Navbar = () => {
     const ServicesDropdown = () => {
         if (!isClient) {
             return (
-                <Link href='/Services' className='nav-link-modern'>
+                <Link href='/ServicesPage' className='nav-link-modern'>
                     <div className='px-3 py-1.5 text-white font-medium hover:bg-white/20 rounded-lg transition-all duration-300 hover-scale text-sm flex items-center space-x-1'>
                         <span>Services</span>
                         <FaChevronDown size={12} />

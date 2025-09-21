@@ -7,7 +7,7 @@ export default function Custom404() {
 
     useEffect(() => {
         // Redirect to home or any other page
-        router.replace('/Services')
+        router.replace('/ServicesPage')
     }, [])
 
     return null // Optional: or show a loading spinner
