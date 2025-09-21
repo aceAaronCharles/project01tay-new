@@ -16,9 +16,6 @@ const nextConfig = {
     minimumCacheTTL: 31536000,
   },
   
-  experimental: {
-    esmExternals: "loose",
-  },
   
   async headers() {
     return [
