@@ -420,13 +420,4 @@ export const ElasticSearch = ({
   );
 };
 
-export {
-  MagneticCard,
-  MorphingBlob,
-  ScrollRevealText,
-  ParticleField,
-  GlitchText,
-  InfinitySpinner,
-  TiltCard,
-  ElasticSearch
-};
+// Components are already exported individually above
