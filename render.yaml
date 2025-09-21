@@ -1,0 +1,54 @@
+services:
+  - type: web
+    name: project01tay-new
+    env: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_GMAIL_USERNAME
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_GMAIL_USERNAME
+      - key: NEXT_PUBLIC_GMAIL_APP_PASSWORD
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_GMAIL_APP_PASSWORD
+      - key: NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_RECAPTCHA_SITE_KEY
+      - key: RECAPTCHA_SECRET_KEY
+        fromService: project01tay-new
+        fromEnvVar: RECAPTCHA_SECRET_KEY
+      - key: NEXT_PUBLIC_API_KEY
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_API_KEY
+      - key: NEXT_PUBLIC_TAWK_PROPERTY_ID
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_TAWK_PROPERTY_ID
+      - key: NEXT_PUBLIC_TAWK_ID
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_TAWK_ID
+      - key: NEXT_PUBLIC_SANITY_PROJECT_ID
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_SANITY_PROJECT_ID
+      - key: NEXT_PUBLIC_SANITY_DATASET
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_SANITY_DATASET
+      - key: NEXT_SANITY_API_TOKEN
+        fromService: project01tay-new
+        fromEnvVar: NEXT_SANITY_API_TOKEN
+      - key: NEXT_PUBLIC_AT_API_KEY
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_AT_API_KEY
+      - key: NEXT_PUBLIC_AT_USERNAME
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_AT_USERNAME
+      - key: NEXT_PUBLIC_AT_USER_ID
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_AT_USER_ID
+      - key: NEXT_PUBLIC_ANALITICS_ID
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_ANALITICS_ID
+      - key: NEXT_PUBLIC_ANALITICS_MEASUREMENT_ID
+        fromService: project01tay-new
+        fromEnvVar: NEXT_PUBLIC_ANALITICS_MEASUREMENT_ID
